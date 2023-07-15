@@ -1,0 +1,305 @@
+*{
+    font-family:'Tajawal', sans-serif;
+}
+.error{
+    border-radius: 10px;
+    height: 110vh;
+    width: 100%;
+    background-color: rgba(44, 39, 39, 0.729);
+    color: azure;
+    font-size: 24px;
+    font-weight: 700;
+    position: fixed;
+    z-index: 99999999;
+    transition: 0.4s;
+}
+.error-box{
+    position: fixed;
+    top: 50%;
+    left:31%;
+    background-color: rgb(255, 255, 255);
+    color: var(--red);
+    border-radius: 10px;
+    padding: 2vh;
+    transition: 0.5s;
+}
+.error-box p{
+    position: absolute;
+    top: -10%;
+    right: 3%;
+    cursor: pointer;
+}
+.bg-inscrit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container{
+    background-color: var(--red);
+    height: 60vh;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.progress-container{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vh;
+    width: 90%;
+}
+
+.text-progress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -4vh;
+}
+.text-progress p{
+    color: var(--bg-light);
+    white-space: nowrap;
+    overflow: visible;
+   text-overflow: ellipsis;
+}
+
+.circle1,.circle2,.circle3{
+    height: 82%;
+    width: 22%;
+    border: solid 0.5vh var(--bg-light);
+    border-radius: 50%;
+    background-color: var(--bg-light);
+    z-index: 5;
+    transition: 0.4s;
+}
+/*circle animation*/
+.checking{
+    background-color: var(--checked);
+    border: solid 0.5vh var(--checked);
+    z-index: 99999;
+    transition: 0.4s;
+}
+.transparent{
+    opacity: 0;
+    transition: 0.4s;
+}
+.current{
+    border: solid 0.5vh var(--checked);
+    transition: 0.4s;
+}
+.icon-checked{
+    display: none;
+    transition: 0.4s;
+}
+.icon-done{
+    display: block;
+    transition: 0.7s;
+}
+.progress-bar{
+    height: 0.5%;
+    background-color: var(--checked);
+    position: absolute;
+    margin-top: 2.9%;
+    margin-left: 18.5%;
+    z-index: 4;
+    width: 5%;
+    transition: 0.4s;
+}
+.middle{
+    height: 0.5%;
+    background-color: var(--checked);
+    position: absolute;
+    margin-top: 2.9%;
+    margin-left: 13.5vh;
+    z-index: 4;
+    width: 18%;
+    transition: 0.4s;
+}
+.coplete{
+    height: 0.5%;
+    background-color: var(--checked);
+    position: absolute;
+    margin-top: 2.9%;
+    margin-left: 0;
+    z-index: 4;
+    width: 25%;
+    transition: 0.4s;
+}
+/*end of animation*/
+.progress-bar-bg{
+    height: 0.5%;
+    background-color: var(--bg-light);
+    position: absolute;
+    margin-top: 2.9%;
+    z-index: 3;
+    width: 25%;
+}
+.circle2 svg{
+    height: 65%;
+    width: 65%;
+    margin: 18%;
+    stroke: var(--red);
+    fill: transparent;
+    stroke-width: 20;
+    transition: 0.4s;
+}
+.circle3 img{
+    height: 80%;
+    width: 80%;
+    margin-top: 20%;
+    margin-left: 10%;
+    transition: 0.4s;
+}
+.circle1 svg:first-child{
+    height: 75%;
+    width: 75%;
+    margin-top: 10%;
+    margin-left: 20%;
+    stroke: var(--red);
+    fill: transparent;
+    transition: 0.4s;
+    stroke-width: 20;
+}
+.check-icon{
+    height: 60%;
+    width: 60%;
+    margin: 20%;
+    stroke-width: 20;
+    transition: 0.4s;
+}
+.hidden{
+    display: none;
+    transition: 0.4s;
+}
+.display{
+    display: flex;
+    transition: 0.4s;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+form input {
+    background-color: var(--bg-light);
+    border: none;
+    border-radius: 10px;
+    height: 3vh;
+    padding: 1vh;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.4s;
+    margin: 1vh;
+    direction: rtl;
+}
+select{
+    background-color: var(--bg-light);
+    border: none;
+    border-radius: 10px;
+    height: 6vh;
+    padding: 1vh;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.4s;
+    margin: 1vh;
+    direction: rtl;
+}
+
+ form input:focus {
+    outline: none;
+    direction: ltr;
+    text-align: right;
+    box-shadow: 0 2px 6px #0000004d;
+    transition: 0.4s;
+}
+button{
+    background-color: var(--bg-light);
+    border: none;
+    border-radius: 10px;
+    height: 6vh;
+    padding: 1vh;
+    color: var(--red);
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 4vh 1vh 1vh 1vh ;
+}
+
+button:hover{
+    box-shadow: 0 2px 6px #0000004d;
+    transition: 0.4s;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.buttons button{
+    width: 50%;
+}
+
+.result-container .txt{
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   font-weight: 700;
+   color: var(--bg-light);
+}
+
+/*screens */
+
+
+/*small pc*/
+@media only screen and (max-width: 1024px) {
+
+    .progress-container{
+        display: none;
+    }
+    .container{
+        background-color: var(--red);
+        height: 45vh;
+    }
+    .error{
+        height: 130vh;
+    }
+    .error-box{
+        position: fixed;
+        top: 30%;
+        left:20%;
+    }
+}
+/*tablette*/
+@media only screen and (max-width: 768px) {
+    .progress-container{
+        display: none;
+    }
+    .error{
+        height: 130vh;
+    }
+    .error-box{
+        position: fixed;
+        top: 30%;
+        left:0%;
+    }
+}
+/*phone*/
+@media only screen and (max-width: 600px) {
+    .progress-container{
+        display: none;
+    }
+    .error{
+        height: 130vh;
+    }
+    .error-box{
+        position: fixed;
+        top: 30%;
+        left:0%;
+    }
+}

@@ -1,0 +1,15 @@
+<div class="bg-stud">
+<div class="container">
+    <div class="headline-logo">
+        <img src="../../assets/logo.png" alt="logo 9rayti">
+    </div>
+    <div class="form-container">
+    <form method="post">
+        <input name="mail" type="text" placeholder="البريد الإلكتروني" [(ngModel)]="email">
+        <input name="password" [type]="changetype?'password':'text'" placeholder="كلمة المرور" [(ngModel)]="password"><span class="eye" (click)="viewpass()"><i [ngClass]="visible?'fa-solid fa-eye':'fa-sharp fa-solid fa-eye-slash'"></i></span>
+        <button (click)="getInfo()">تسجيل الدخول</button>
+     <p>لا تملك حسابا ؟ <a href=""> سجل الآن</a></p>
+    </form>
+    </div>
+</div>
+</div>

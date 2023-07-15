@@ -1,0 +1,144 @@
+.direction{
+    transform: rotateY(180deg);
+    transition: 0.4s;
+}
+.bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+}
+.img-cont{
+    height:18vh;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.cards{
+    margin-top: 25vh;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card1,.card2{
+width: 30vh;
+height: 30vh;
+background-color: var(--red);
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+color: whitesmoke;
+font-size: 24px;
+text-align: center;
+cursor: pointer;
+}
+.card1 img,.card2 img{
+    height: 20vh;
+    width: auto;
+}
+.text-cont{
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    max-width: 35vh;
+}
+
+/*small pc*/
+@media only screen and (max-width: 1024px) {
+    .cards{
+        margin-top: 5vh;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card1,.card2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 30vh;
+        height: 30vh;
+        margin-left: 5vh;
+        border-radius: 7px;
+    }
+    .img-cont{
+        height:25vh;
+        margin: auto;
+    }
+    img{
+        height: 25vh;
+    }
+    .card1 img,.card2 img{
+        height: 20vh;
+        width: auto;
+    }
+ 
+}
+/*tablette*/
+@media only screen and (max-width: 768px) {
+    .cards{
+        margin-top: 5vh;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card1,.card2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 20vh;
+        height: 20vh;
+        margin-left: 5vh;
+        border-radius: 7px;
+        display: flex;
+
+        font-size: 18px;
+        text-align: center;
+    }
+    .img-cont{
+        height:25vh;
+        margin: auto;
+    }
+    img{
+        height: 25vh;
+    }
+    .card1 img,.card2 img{
+        height: 15vh;
+        width: auto;
+    }
+
+}
+/*phone*/
+@media only screen and (max-width: 600px) {
+    .cards{
+        margin-top: 5vh;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .card1,.card2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 20vh;
+        height: 20vh;
+        margin-bottom: 5vh;
+        border-radius: 7px;
+        display: flex;
+        font-size: 18px;
+        text-align: center;
+    }
+    .img-cont{
+        height:20vh;
+        margin: auto;
+    }
+    img{
+        height: 20vh;
+    }
+    .card1 img,.card2 img{
+        height: 10vh;
+        width: auto;
+    }
+}

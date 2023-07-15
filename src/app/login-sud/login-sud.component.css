@@ -1,0 +1,154 @@
+*{
+    font-family:'Tajawal', sans-serif;
+    direction: ltr;
+}
+
+span{
+    color: black;
+}
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 70vh;
+}
+.headline-logo {
+    margin-top: 3vh;
+    height: 40%;
+    margin-right:auto ;
+    margin-left: auto;
+    margin-bottom: 5vh;
+}
+.headline-logo img{
+    height: 100%;
+}
+.form-container form{
+    border-radius: 10px;
+    height: 100%;
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7vh 5vh 3vh 5vh;
+}
+
+.eye{
+    position: relative;
+    right: 90%;
+    top: -19.5%;
+    cursor: pointer;
+    color: var(--red);
+}
+.form-container form input{
+    background-color: var(--bg-light);
+    border: none;
+    border-radius: 10px;
+    height: 4vh;
+    padding: 1vh;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.form-container form input:focus {
+    outline: none;
+    direction: ltr;
+    text-align: right;
+    box-shadow: 0 2px 6px #0000004d;
+    transition: 0.4s;
+}
+button{
+    background-color: var(--bg-light);
+    border: none;
+    border-radius: 10px;
+    height: 6vh;
+    padding: 1vh;
+    color: var(--red);
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: -3vh;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover{
+    box-shadow: 0 2px 6px #0000004d;
+    transition: 0.4s;
+}
+.form-container form p{
+    font-weight: 700;
+}
+a{
+    color: black;
+}
+/*small pc*/
+@media only screen and (max-width: 1024px) {
+    .headline-logo {
+        margin-top: 3vh;
+        height: 25%;
+        margin-bottom: 5vh;
+    }
+    .container{
+        width: 60%;
+    }
+    .eye{
+        right: 90%;
+        top: -19.5%;
+    }
+    .form-container form input{
+        font-size: 12px;
+        font-weight: 700;
+        padding: 1vh;
+    }
+    button{
+        height: 6vh;
+        padding: 1vh;
+        font-size: 16px;
+    }
+
+  }
+/*tablette*/
+@media only screen and (max-width: 768px) {
+    .headline-logo {
+        margin-top: 3vh;
+        height: 25%;
+        margin-bottom: 5vh;
+    }
+    .container{
+        width: 60%;
+    }
+    .eye{
+        right: 90%;
+        top: -16.5%;
+    }
+    .form-container form input{
+        font-size: 12px;
+        font-weight: 700;
+        padding: 3vh;
+    }
+    button{
+        height: 6vh;
+        padding: 6vh;
+        font-size: 16px;
+    }
+}
+/*phone*/
+@media only screen and (max-width: 600px) {
+    .headline-logo {
+        margin-top: 3vh;
+        height: 15%;
+        margin-bottom: 5vh;
+    }
+    .container{
+        width: 80%;
+    }
+    .eye{
+        right: 87%;
+    }
+    .form-container form input{
+        font-size: 12px;
+        font-weight: 700;
+        padding: 1vh;
+    }
+}

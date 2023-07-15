@@ -1,0 +1,101 @@
+<div class="bg-inscrit">
+    <div class="logo-container">
+        <img src="../assets/logo.png" alt="">
+    </div>
+    <div class="container">
+        <div class="progress-container">
+            <div class="circle1 " [class.current]="step==3" [class.checking]="step==4">
+                <svg [class.icon-checked]="step==4" class="" viewBox="-10 -10 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M436.667 491H56.3333C41.9232 491 28.1033 484.56 17.9139 473.097C7.72439 461.634 2 446.086 2 429.875V63.125C2 46.9136 7.72439 31.3663 17.9139 19.9031C28.1033 8.43993 41.9232 2 56.3333 2H328C342.41 2 356.23 8.43993 366.419 19.9031C376.609 31.3663 382.333 46.9136 382.333 63.125V93.6875M436.667 491C422.257 491 408.437 484.56 398.247 473.097C388.058 461.634 382.333 446.086 382.333 429.875V93.6875M436.667 491C451.077 491 464.897 484.56 475.086 473.097C485.276 461.634 491 446.086 491 429.875V154.812C491 138.601 485.276 123.054 475.086 111.591C464.897 100.127 451.077 93.6875 436.667 93.6875H382.333M273.667 2H165M110.667 368.75H273.667M110.667 124.25H273.667V246.5H110.667V124.25Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg  [class.icon-done]="step==4"class="check-icon icon-checked" viewBox="-10 0 400 283" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M371.656 3L154.321 280" stroke="#F1E0CE" stroke-width="20" stroke-linecap="round"/>
+                    <path d="M3 145.436L153.814 279.493" stroke="#F1E0CE" stroke-width="20" stroke-linecap="round"/>
+                    </svg>
+            </div><!--#############################################################################
+                ################################################################################
+                el animations i completed tawa ne9edni el design mta el form wakahaw 
+            #############################################################################
+        ################################################################################-->
+            <div class="circle2 " [class.current]="step==2" [class.checking]="step==3 ||step==4">
+                <svg [class.icon-checked]="step==3 ||step==4" class="" viewBox="-10 -10 380 380"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M141.582 27.0962C149.7 -6.36539 197.3 -6.36539 205.418 27.0962C206.636 32.123 209.024 36.7912 212.387 40.7209C215.75 44.6505 219.993 47.7306 224.772 49.7103C229.55 51.69 234.729 52.5134 239.885 52.1136C245.042 51.7138 250.032 50.102 254.448 47.4094C283.851 29.4972 317.522 63.1493 299.61 92.5711C296.921 96.9854 295.312 101.972 294.913 107.125C294.514 112.278 295.337 117.453 297.314 122.229C299.291 127.004 302.368 131.246 306.293 134.609C310.218 137.971 314.881 140.361 319.904 141.582C353.365 149.7 353.365 197.3 319.904 205.418C314.877 206.636 310.209 209.024 306.279 212.387C302.349 215.75 299.269 219.993 297.29 224.772C295.31 229.55 294.487 234.729 294.886 239.885C295.286 245.042 296.898 250.032 299.591 254.448C317.503 283.851 283.851 317.522 254.429 299.61C250.015 296.921 245.028 295.312 239.875 294.913C234.722 294.514 229.547 295.337 224.771 297.314C219.996 299.291 215.754 302.368 212.391 306.293C209.029 310.218 206.639 314.881 205.418 319.904C197.3 353.365 149.7 353.365 141.582 319.904C140.364 314.877 137.976 310.209 134.613 306.279C131.25 302.349 127.007 299.269 122.228 297.29C117.45 295.31 112.271 294.487 107.115 294.886C101.958 295.286 96.9682 296.898 92.552 299.591C63.1493 317.503 29.4781 283.851 47.3903 254.429C50.0791 250.015 51.6883 245.028 52.0872 239.875C52.4861 234.722 51.6634 229.547 49.686 224.771C47.7086 219.996 44.6322 215.754 40.707 212.391C36.7818 209.029 32.1185 206.639 27.0962 205.418C-6.36539 197.3 -6.36539 149.7 27.0962 141.582C32.123 140.364 36.7912 137.976 40.7209 134.613C44.6505 131.25 47.7306 127.007 49.7103 122.228C51.69 117.45 52.5134 112.271 52.1136 107.115C51.7138 101.958 50.102 96.9682 47.4094 92.552C29.4972 63.1493 63.1493 29.4781 92.5711 47.3903C111.55 58.9761 136.323 48.7242 141.582 27.0962Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M230.65 173.496C230.65 188.657 224.627 203.198 213.906 213.919C203.185 224.64 188.645 230.662 173.483 230.662C158.322 230.662 143.781 224.64 133.06 213.919C122.339 203.198 116.316 188.657 116.316 173.496C116.316 158.334 122.339 143.794 133.06 133.073C143.781 122.352 158.322 116.329 173.483 116.329C188.645 116.329 203.185 122.352 213.906 133.073C224.627 143.794 230.65 158.334 230.65 173.496Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                    <svg  [class.icon-done]="step==3||step==4"class="check-icon icon-checked" viewBox="-10 0 400 283" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M371.656 3L154.321 280" stroke="#F1E0CE" stroke-width="20" stroke-linecap="round"/>
+                    <path d="M3 145.436L153.814 279.493" stroke="#F1E0CE" stroke-width="20" stroke-linecap="round"/>
+                    </svg> 
+            </div>
+            <div class="circle3 current "[class.checking]="step!==1">
+               <img [class.icon-checked]="step!==1" class="" src="../../assets/first-icon.svg" alt="">
+               <svg [class.icon-done]="step!==1" class="check-icon  icon-checked" viewBox="-10 0 400 283" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M371.656 3L154.321 280" stroke="#F1E0CE" stroke-width="20" stroke-linecap="round"/>
+                <path d="M3 145.436L153.814 279.493" stroke="#F1E0CE" stroke-width="20" stroke-linecap="round"/>
+                </svg>
+                
+            </div>
+            <div class="progress-bar-bg"></div>
+            <div [class.middle]="step==2" [class.coplete]="step==3 ||step==4" class=" progress-bar"></div>
+        </div>
+        <div class="text-progress">
+            <p [class.transparent]="step==1 || step==2">الملف الشخصي</p>
+            <p [class.transparent]="step==1">إعدادات الحساب</p>
+            <p>معلومات عامة</p>
+        </div>
+        <div class="input-container" >
+            <form  method="post" [class.hidden]="step!==1" >
+                <input name="name" type="text" placeholder="إسم التلميذ" [(ngModel)]="name">
+                <input name="last-name" type="text" placeholder="لقب التلميذ" [(ngModel)]="lastName" >
+                <input name="date"  type="text" placeholder="تاريخ الولادة" [(ngModel)]="ddn" >
+                <input name="tel" type="text" placeholder="إسم الولي" [(ngModel)]="pName">
+                <button (click)="next1()"> < التالي</button>
+            </form>
+        </div>
+        
+        <div class="input-container">
+            <form  method="post" [class.display]="step==2" [class.hidden]="step!==2">
+                <input type="text" [(ngModel)]="email" name="email"  placeholder="البريد الإلكتروني">
+                <input type="tel" [(ngModel)]="tel" name="tel"  placeholder=" رقم الجوال">
+                <input type="text" [(ngModel)]="pass" name="pass"  placeholder="كلمة المرور">
+                <input type="text" [(ngModel)]="repass" name="repass"  placeholder="تأكيد كلمة المرور">
+                <div class="buttons">
+                    <button (click)="next2()"> < التالي</button>
+                      <button (click)="previous()"> عودة ></button>
+                </div>
+            </form>
+        </div>
+        <div class="input-container">
+            <form  method="post" class="hidden " [class.display]="step==3">
+               
+                    <select name="wileya" [(ngModel)]="i" >
+                        <option value="">اختر ولايتك</option>
+                        <option *ngFor="let n of wileya"> {{n.esm}} </option>
+                    </select>
+                    <select name="lvl" [(ngModel)]="f" >
+                        <option value="">اختر مستواك الدراسي</option>
+                        <option *ngFor="let n of lvl"> {{n.esm}} </option>
+                    </select>
+                    <input [(ngModel)]="link" type="text" placeholder="رابط الإحالة" name="link">
+                    <div class="buttons">
+                        <button (click)="next3()">تأكيد المعلومات</button>
+                        <button (click)="previous()"> عودة ></button>
+                    </div>
+            </form>
+        </div>
+        <div [class.display]="step==4" class="hidden result-container">
+            <div class="txt">
+            <h2>تم التسجيل بنجاح</h2>
+            <p>ستتم إعادة توجيهك الآن إلى لوحة التحكم الخاصة بك</p>
+        </div>
+        </div>
+    </div>
+    <div class="error hidden" [class.display]="error">
+        <div class="hidden error-box"[class.display]="error">
+            <h1>please complete all the fields</h1>
+            <p (click)="clicked()" >x</p>
+        </div>
+    </div>
+</div>
+
+

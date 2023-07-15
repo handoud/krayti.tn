@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+:root{
+    --red:#E36255;
+    --bg-light:#F1E0CE;
+    --checked:#A2C5C9;
+}
+
+
+body{
+    background-color: var(--bg-light);
+    background-image: url(assets/tfach-math.svg);
+}
+.multi{
+    position: absolute;
+    top:15% ;
+    left: 10%;
+}
+.plus{
+    position: absolute;
+    top: 10%;
+    right:5% ;
+}
+.minus{
+    position: absolute;
+    top: 40%;
+    right:20% ;
+}
+.ala{
+    position: absolute;
+    top:50% ;
+    left: 23%;
+}
+/*small pc*/
+@media only screen and (max-width: 1024px) {
+    .ala,.minus,.multi,.plus{
+      display: none;
+    }
+  }
+/*tablette*/
+@media only screen and (max-width: 768px) {
+    .ala,.minus,.multi,.plus{
+      display: none;
+    }
+  }
+  /*phone*/
+@media only screen and (max-width: 600px) {
+  .ala,.minus,.multi,.plus{
+    display: none;
+  }
+}
